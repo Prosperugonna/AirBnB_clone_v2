@@ -13,4 +13,9 @@ def hello_airbnb():
 def odd_or_even(n):
     """Return a message based on whether n is odd or even"""
     if n % 2 == 0:
-        return f"{n} is
+        return f"{n} is even"
+    else:
+        return f"{n} is odd"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
