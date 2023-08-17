@@ -9,5 +9,8 @@ def hello_airbnb():
     """Return hello NMBB for /airbnb-onepage/"""
     return "Hello HBNB!"
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+@app.route("/airbnb-dynamic/number_odd_or_even/<int:n>", strict_slashes=False)
+def odd_or_even(n):
+    """Return a message based on whether n is odd or even"""
+    if n % 2 == 0:
+        return f"{n} is
